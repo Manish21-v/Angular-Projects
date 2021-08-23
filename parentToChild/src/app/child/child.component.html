@@ -1,0 +1,16 @@
+<div>
+  <div>
+    <h2>
+      Child Component
+    </h2>
+  </div>
+  <input [(ngModel)]="name" type="text">
+  <div>
+    <button (click)="sendName()">
+      send to parent
+    </button>
+  </div>
+</div>
+<div>
+  <h2>{{"Length send from Parent :"+ countlenght}}</h2>
+</div>

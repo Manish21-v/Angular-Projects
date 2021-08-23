@@ -1,0 +1,6 @@
+<h1>Inside parent component</h1>
+<app-child [parentData] = "countlength(message)" [countlenght] = "childNameLength" (myEvent) = "message = $event"></app-child>
+<div>
+  <h1>{{ "Display name received from child component : " +message}}</h1>
+</div>
+
