@@ -1,0 +1,29 @@
+<form [formGroup] = "supportCenterForm" (submit) = "saveUser()">
+  <div>
+    <label for="firstname">First Name</label>
+    <input formControlName="firstname" id="name"/>
+  </div>
+
+  <div>
+    <label for="lastname">Last Name</label>
+   <input formControlName="lastname" id="lastname" />
+  </div>
+  
+  <div>
+    <label for="email">Email</label>
+    <input formControlName="email" id="email" />
+  </div>
+  
+  <div>
+    <label for="phone">Phone</label>
+    <input formControlName="phone" id="phone" />
+  </div>
+  
+  <div>
+    <label for="Address">Address</label>
+    <input formControlName="address" id="address" />
+  </div>
+
+  <button type="submit" [disabled]="!supportCenterForm.valid">Submit Form</button>
+
+</form>
