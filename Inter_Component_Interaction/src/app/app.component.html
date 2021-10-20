@@ -1,0 +1,21 @@
+<mat-card>
+    <h1>Parent Component</h1>
+    <div>
+        <app-child [parentData] = "greeting" [parentMessage] = "message" (myEvent) = "childMessage = $event"></app-child>
+    </div>
+    <div>
+        <p>Type your message for Child</p>
+        <input type="text" #parentInput>
+        <div>
+          <button (click)="sendData()">
+            send to Child
+          </button>
+        </div>
+    </div>
+    <div>
+        <h2>
+            {{ "Child say :" + childMessage}}
+        </h2>
+    </div>
+</mat-card>
+

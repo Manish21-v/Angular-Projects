@@ -1,0 +1,20 @@
+<mat-card>
+    <div>
+        <div>
+          <h2>
+            Child Component
+          </h2>
+        </div>
+        <div>
+            <h2>{{ "Greeting :" + parentData }}</h2>
+        </div>
+        <p>Type your message for Parent</p>
+        <input [(ngModel)]="message" type="text">
+        <div>
+          <button (click)="sendName()">
+            send to parent
+          </button>
+        </div>
+        <h2>{{ "Parent says :" + parentMessage}}</h2>
+      </div>
+</mat-card>
