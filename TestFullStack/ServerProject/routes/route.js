@@ -5,10 +5,10 @@ let request = require('request');
 router.use(bodyParser.json());
 
 
-router.post('/get_pincode_details',async (req,res)=>{
+router.post('/get_pincode_details',(req,res)=>{
   console.log('inside API',req.body.pincode);
   try {
-    await request({
+    request({
       uri:`https://api.postalpincode.in/pincode/${req.body.pincode}`,
       method: 'GET',
       json: {},
