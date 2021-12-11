@@ -1,0 +1,9 @@
+table ,td  {
+border: 1px solid grey;
+border-collapse: collapse;
+padding: auto;
+
+}
+table tr:nth-child(odd) {
+  background-color: bisque;
+}

@@ -1,0 +1,16 @@
+<p>App component works</p>
+
+<table >
+  <tr>
+    <td>Name</td>
+    <td>BranchType</td>
+    <td>DeliveryStatus</td>
+    <td>Region</td>
+  </tr>
+  <tr *ngFor="let pincodeDetail of pincodeDetails">
+    <td>{{pincodeDetail.Name}} :</td>
+    <td>{{pincodeDetail.BranchType}} :</td>
+    <td>{{pincodeDetail.DeliveryStatus}} :</td>
+    <td>{{pincodeDetail.Region}} </td>
+  </tr>
+</table>
