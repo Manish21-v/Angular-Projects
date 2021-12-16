@@ -1,0 +1,32 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="card">
+        <div class="card-header">
+          <label>Search History</label>
+          <button class="btn btn-primary " style="float: right;" (click)="clearSearchHistory()">Clear History</button>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="card-body">
+              <ul class="list-group">
+                <p>Valid User List</p>
+                <li class="list-group-item" *ngFor="let user of usersList.validUser">
+                  <a href="{{url}}{{user}}" target="_blank">{{user}}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <ul class="list-group">
+                <p>Invalid User List</p>
+                <li class="list-group-item" *ngFor="let user of usersList.invalidUser">{{user}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
