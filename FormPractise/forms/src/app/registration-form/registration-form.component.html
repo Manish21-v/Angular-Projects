@@ -1,0 +1,30 @@
+<p>registration-form works!</p>
+<div class="container-fluid">
+  <form [formGroup]="userForm" (submit) = "saveDetails()">
+    <div>
+      <label>FirstName</label>
+      <input formControlName = "firstname">
+    </div>
+    <div>
+      <label>LastName</label>
+      <input formControlName = "lastname">
+    </div>
+    <div formGroupName = "userLocation">
+      <div>
+        <label>Landmark</label>
+        <input formControlName = "landmark">
+      </div>
+      <div>
+        <label>Area</label>
+        <input formControlName = "area">
+      </div>
+      <div>
+        <label>Pincode</label>
+        <input formControlName = "pincode">
+      </div>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

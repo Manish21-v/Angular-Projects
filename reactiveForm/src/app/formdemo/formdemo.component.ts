@@ -11,9 +11,9 @@ export class FormdemoComponent implements OnInit {
   public supportCenterForm : any;
   constructor(private formBuilder:FormBuilder) { 
     this.supportCenterForm = this.formBuilder.group({
-      firstname: ['',Validators.required,ValidationService.validateEmail],
+      firstname: ['',Validators.required],
       lastname: ['',Validators.required],
-      email : ['',Validators.required],
+      email : ['',Validators.required,ValidationService.validateEmail],
       phone : ['',Validators.required],
       address : ['',Validators.required]
     })
